@@ -40,6 +40,7 @@ const AddressForm = ({ checkoutToken, next }) => {
     setShippingOptions(options);
     setShippingOption(options[0].id);
   }
+  console.log(options);
 
   useEffect(() => {
     fetchShippingCountries(checkoutToken.id);

@@ -1,0 +1,24 @@
+.card-category {
+  background-image: url('https://images.unsplash.com/photo-1527090526205-beaac8dc3c62?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  padding-top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.home-main {
+  background-color: #FFF;
+}
+
+h4 {
+  text-align: center;
+}
