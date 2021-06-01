@@ -6,12 +6,13 @@ const Home = () => {
   // const classes = useStyles();
   return (
     <section>
-      <div className="card-category">
-        <h2>Golden Shoe</h2>
-      </div>
-      {/* <div>
-        <h4 className="home-main">Best Sellers</h4>
-      </div> */}
+<div class="banner">
+  <div className="container">
+    <h1>Golden Shoe</h1>
+    <p>changing shoes one pair at a time</p>
+    {/* <a className="btn btn-flat" href="#">Apply now</a> */}
+  </div>
+</div>
     </section>  
   )
 }
