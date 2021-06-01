@@ -10,9 +10,16 @@ const App = () => {
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState('')
 
+  // const inventory = async () => {
+  //   const { data } = await commerce.products.list();
+  //   return data[1].inventory.available
+    
+  // };
+//  console.log(inventory())
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
+    // console.log(data[0].inventory.available);
     
     setProducts(data);
   };

@@ -5,13 +5,13 @@ import './home.css';
 const Home = () => {
   // const classes = useStyles();
   return (
-    <section >
+    <section>
       <div className="card-category">
-      <h2>Golden Shoe</h2>
+        <h2>Golden Shoe</h2>
       </div>
-      <div className="home-main">
-        <h4>Best Sellers</h4>
-      </div>
+      {/* <div>
+        <h4 className="home-main">Best Sellers</h4>
+      </div> */}
     </section>  
   )
 }
