@@ -10,7 +10,6 @@ const Products = ({ products, onAddToCart }) => {
 
   return (
     <main className={classes.content}>
-      {/* <h3 style={{ textAlign: 'center', fontSize: '1.5rem'}}>Our Most Popular Shoes</h3> */}
       <div className={classes.toolbar}/>
       <Grid container justify="center" spacing={4}>
         {products.map((product) => (

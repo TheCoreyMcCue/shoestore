@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider, Button } from '@material-ui/core';
+import { Paper, Stepper, Step, StepLabel, Typography, Button } from '@material-ui/core';
 
 import { commerce } from '../../../lib/commerce';
 import useStyles from './styles'
@@ -34,9 +34,17 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
   };
 
   const Confirmation = () => (
-    <div>
-      Payment Confirmed!
-    </div>
+    <>
+      <div style={{minHeight: '40vh', textAlign: 'center'}}>
+        <Typography variant="h5">Thank you for your order!</Typography>
+        <Typography variant="subtitle1">Your order will ship within 3 business days</Typography>
+      </div>
+      <div>
+
+        <Typography style={{textAlign: 'center'}} variant="subtitle1">Please take some time to give us feedback on your order process</Typography>
+        <Button style={{width: '100%'}} size="large" type="button" variant="contained" color="primary">Give Feedback</Button>
+      </div>
+    </>
   )
 
   const Form = () => activeStep === 0

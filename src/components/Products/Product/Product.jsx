@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Select, FormControl, MenuItem } from '@material-ui/core';
+import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Select, MenuItem } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/icons';
 
 
@@ -28,7 +28,7 @@ const Product = ({ product, onAddToCart }) => {
           </Typography>
         </div>
         <Typography variant="body2" className={classes.soldOut}>
-          {product.inventory.available === 0 ? 'out of stock' : ''}
+          {product.inventory.available === 0 ? 'out of stock' : `${product.inventory.available} pairs remaining`}
         </Typography>
         <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" />
       </CardContent>
