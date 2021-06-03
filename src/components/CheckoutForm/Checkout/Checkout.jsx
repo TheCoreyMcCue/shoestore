@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Paper, Stepper, Step, StepLabel, Typography, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import { commerce } from '../../../lib/commerce';
 import useStyles from './styles'
@@ -41,8 +42,10 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
       </div>
       <div>
 
-        <Typography style={{textAlign: 'center'}} variant="subtitle1">Please take some time to give us feedback on your order process</Typography>
-        <Button style={{width: '100%'}} size="large" type="button" variant="contained" color="primary">Give Feedback</Button>
+        <Typography style={{ textAlign: 'center' }} variant="subtitle1">Want €5 off of your next order? Take a quick survey about todays order.</Typography>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNyWhPvDnBI24eCEN_mg5izaDy_RsTJuc29uSj7G0YtE0CrQ/viewform" target="__blank" style={{textDecoration: 'none'}}>
+          <Button style={{ width: '100%' }} size="large" type="button" variant="contained" color="primary">Give Feedback</Button>
+        </a>
       </div>
     </>
   )
